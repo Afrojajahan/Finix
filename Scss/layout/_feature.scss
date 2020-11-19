@@ -1,0 +1,148 @@
+.feature-item {
+    position: relative;
+    padding: 3rem 1rem;
+    box-shadow: .1rem .1rem .4rem .1rem #aaaaaa;
+    overflow: hidden;
+    z-index: 1;
+    transition: .5s all ease;
+
+    @media screen and(max-width:575px) {
+        width: 70%;
+        margin: 0rem 4.5rem;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 95%;
+        background: #EE7678;
+        opacity: .3;
+        border-radius: 5rem;
+        margin-top: -11.5rem;
+        z-index: -1;
+
+        @media screen and(max-width:575px) {
+            margin-top: -9rem;
+        }
+
+        @media screen and(max-width:992px) {
+            margin-top: -9rem;
+        }
+
+        @media screen and(max-width:1200px) {
+            width: 100%;
+            height: 80%;
+
+        }
+
+    }
+
+
+    &:hover {
+        transform: translateY(-1rem);
+    }
+}
+
+.feature-item .feature-icon i {
+
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    background: #ffffff;
+    border-radius: 3.5rem;
+    z-index: 5;
+    color: $primary-color;
+
+
+}
+
+.feature-text {
+    position: relative;
+
+    & .animate-music-btn {
+
+        i {
+            position: absolute;
+            right: 40%;
+            bottom: 15%;
+            width: 2.5rem;
+            height: 2.5rem;
+            line-height: 2.5rem;
+            color: #ffffff;
+            background: $primary-color;
+            font-size: 1.5rem;
+            padding: 0rem .8rem;
+            border-radius: 3rem;
+            text-align: center;
+
+            @media screen and(max-width:575px) {
+
+                left: 55%;
+                top: 80%;
+            }
+
+            @media screen and(max-width:992px) {
+                left: 55%;
+                top: 79%;
+            }
+
+            @media screen and(max-width:1200px) {
+
+                right: 42%;
+                bottom: 32%;
+            }
+        }
+
+        &::before {
+            content: "";
+            width: 90px;
+            height: 90px;
+            position: absolute;
+            right: 35%;
+            bottom: 11%;
+            background: #e73a3e;
+            border-radius: 50%;
+            animation: palybtn 1.6s ease-out infinite;
+
+            @media screen and(max-width:575px) {
+
+                left: 50%;
+                top: 75%;
+            }
+
+            @media screen and(max-width:992px) {
+                left: 50%;
+                top: 75%;
+
+            }
+
+            @media screen and(max-width:1200px) {
+                right: 38%;
+                bottom: 29%;
+            }
+        }
+    }
+}
+
+
+@keyframes palybtn {
+
+    0%,
+    30% {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: .7;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}

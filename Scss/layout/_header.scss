@@ -1,0 +1,10 @@
+
+.nav-item {
+    position: relative;
+ 
+}
+.btn-custom1{
+    @media screen and(max-width:575px) {
+    display: none;
+  }
+}

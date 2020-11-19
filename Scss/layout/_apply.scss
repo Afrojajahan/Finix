@@ -1,0 +1,54 @@
+.apply-list {
+    ul {
+        list-style: none;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            width: .2rem;
+            height: calc(100% - 5rem);
+            background: $primary-color;
+        }
+
+        li {
+            position: relative;
+
+
+            &::before {
+                content: attr(data-nbr);
+                position: absolute;
+                top: 0%;
+                left: -12%;
+                height: 2.5rem;
+                width: 2.5rem;
+                background: #f9fafb;
+                border: 1px solid $primary-color;
+                border-radius: 50%;
+                line-height: 2.5rem;
+                text-align: center;
+            }
+        }
+
+    }
+}
+
+.form-section {
+    background: #fdebeb;
+    padding: 3rem;
+
+      @media screen and(max-width:575px){          
+          margin-top: 1rem;
+    }
+    & .form-group {
+
+        input,
+        select {
+            border: none;
+        }
+
+
+
+    }
+}

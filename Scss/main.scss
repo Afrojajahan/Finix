@@ -1,0 +1,60 @@
+$primary-color: #e73a3e;
+
+.pri-heading {
+    color: $primary-color;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Header section
+@import "./layout/header";
+// Slider section
+
+ @import "./layout/slider";
+
+// About section
+
+@import "./layout/about";
+
+// feature section
+@import "./layout/feature.scss";
+
+
+// Apply section
+@import "./layout/apply.scss";
+
+
+// call-section
+@import "./layout/call";
+
+
+
+// Company  section
+@import "./layout/company";
+
+
+// service section
+
+@import "./layout/service";
+// Testimonial section
+
+@import "./layout/testimonial";
+// team-member-section
+
+@import "./layout/team";
+// blog-section
+
+@import "./layout/blog";
+
+// footer part
+
+
+@import "./layout/footer";
